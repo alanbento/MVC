@@ -14,6 +14,7 @@ namespace SalesWebMVC.Models
         public double BaseSalary { get; set; }
 
         public Department Department { get; set; }
+        public int DepartmentId { get; set; }
 
         public ICollection<SalesRecord> Sales { get; set; } = new List<SalesRecord>();
 
@@ -29,6 +30,7 @@ namespace SalesWebMVC.Models
             BirthDate = birthDate;
             BaseSalary = baseSalary;
             Department = department;
+            
         }
 
         public void AddSales(SalesRecord sr)
